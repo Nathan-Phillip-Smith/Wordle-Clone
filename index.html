@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" /> 
+        <meta name="viewport" content="width=device-width, initial-scale-1.0" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+
+        <!-- Header -->
+
+        <header id="header">
+            <h1 id="title">WORDLE</h1>
+        </header>
+
+        <!-- Main -->
+
+        <main>
+            <div id="hangman"></div>
+            <div id="wrong"></div>
+            <div id="gameboard">
+
+                <!-- Row 1 -->
+
+                <div class="placeholder1">
+                    <div class="letter1 row1"></div>
+                </div>
+                <div class="placeholder2">
+                    <div class="letter2 row1"></div>
+                </div>
+                <div class="placeholder3">
+                    <div class="letter3 row1"></div>
+                </div>
+                <div class="placeholder4">
+                    <div class="letter4 row1"></div>
+                </div>
+                <div class="placeholder5">
+                    <div class="letter5 row1"></div>
+                </div>
+
+                <!-- Row 2 -->
+
+                <div class="placeholder1">
+                    <div class="letter21 row2"></div>
+                </div>
+                <div class="placeholder2">
+                    <div class="letter22 row2"></div>
+                </div>
+                <div class="placeholder3">
+                    <div class="letter23 row2"></div>
+                </div>
+                <div class="placeholder4">
+                    <div class="letter24 row2"></div>
+                </div>
+                <div class="placeholder5">
+                    <div class="letter25 row2"></div>
+                </div>
+
+                <!-- Row 3 -->
+
+                <div class="placeholder1">
+                    <div class="letter31 row3"></div>
+                </div>
+                <div class="placeholder2">
+                    <div class="letter32 row3"></div>
+                </div>
+                <div class="placeholder3">
+                    <div class="letter33 row3"></div>
+                </div>
+                <div class="placeholder4">
+                    <div class="letter34 row3"></div>
+                </div>
+                <div class="placeholder5">
+                    <div class="letter35 row3"></div>
+                </div>
+
+                <!-- Row 4 -->
+
+                <div class="placeholder1">
+                    <div class="letter41 row4"></div>
+                </div>
+                <div class="placeholder2">
+                    <div class="letter42 row4"></div>
+                </div>
+                <div class="placeholder3">
+                    <div class="letter43 row4"></div>
+                </div>
+                <div class="placeholder4">
+                    <div class="letter44 row4"></div>
+                </div>
+                <div class="placeholder5">
+                    <div class="letter45 row4"></div>
+                </div>
+                <div class="placeholder6">
+                    <div class="letter46 row4"></div>
+                </div>
+
+                <!-- Row 5 -->
+
+                <div class="placeholder1">
+                    <div class="letter51 row5"></div>
+                </div>
+                <div class="placeholder2">
+                    <div class="letter52 row5"></div>
+                </div>
+                <div class="placeholder3">
+                    <div class="letter53 row5"></div>
+                </div>
+                <div class="placeholder4">
+                    <div class="letter54 row5"></div>
+                </div>
+                <div class="placeholder5">
+                    <div class="letter55 row5"></div>
+                </div>
+
+                <!-- Row 6 -->
+
+                <div class="placeholder1">
+                    <div class="letter61 row6"></div>
+                </div>
+                <div class="placeholder2">
+                    <div class="letter62 row6"></div>
+                </div>
+                <div class="placeholder3">
+                    <div class="letter63 row6"></div>
+                </div>
+                <div class="placeholder4">
+                    <div class="letter64 row6"></div>
+                </div>
+                <div class="placeholder5">
+                    <div class="letter65 row6"></div>
+                </div>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+
+        <footer>
+            <div id="guess">
+                <label id="label" for="guess-input">Guess:</label>
+                <input id="guess-input" type="text" placeholder="Guess a word" />
+                <div id="submit">Submit</div>
+            </div>
+            <div>
+                <p id="not-a-word" class="nope">Not a word</p>
+            </div>
+            <div id="qwertyuiop">
+                <div class="q" id="keyboard">Q</div>
+                <div class="w" id="keyboard">W</div>
+                <div class="e" id="keyboard">E</div>
+                <div class="r" id="keyboard">R</div>
+                <div class="t" id="keyboard">T</div>
+                <div class="y" id="keyboard">Y</div>
+                <div class="u" id="keyboard">U</div>
+                <div class="i" id="keyboard">I</div>
+                <div class="o" id="keyboard">O</div>
+                <div class="p" id="keyboard">P</div>
+            </div>
+            <div id="asdfghjkl">
+                <div class="a" id="keyboard">A</div>
+                <div class="s" id="keyboard">S</div>
+                <div class="d" id="keyboard">D</div>
+                <div class="f" id="keyboard">F</div>
+                <div class="g" id="keyboard">G</div>
+                <div class="h" id="keyboard">H</div>
+                <div class="j" id="keyboard">J</div>
+                <div class="k" id="keyboard">K</div>
+                <div class="l" id="keyboard">L</div>
+            </div>
+            <div id="zxcvbnm">
+                <div class="z" id="keyboard">Z</div>
+                <div class="x" id="keyboard">X</div>
+                <div class="c" id="keyboard">C</div>
+                <div class="v" id="keyboard">V</div>
+                <div class="b" id="keyboard">B</div>
+                <div class="n" id="keyboard">N</div>
+                <div class="m" id="keyboard">M</div>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        <script type="module" src="theWords.js"></script>
+    </body>
+</html>

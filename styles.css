@@ -1,0 +1,168 @@
+/* Main CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #5d7442;
+}
+
+/* Header CSS */
+
+header {
+    background-color: #97aa82;
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+}
+
+/* Main CSS */
+
+#gameboard {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 250px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+
+.placeholder5, .placeholder4, .placeholder3, .placeholder2, .placeholder1, .placeholder0 {
+    width: 30px;
+    height: 40px;
+    margin: 10px;
+    border: 2px solid #97aa82;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+}
+
+
+.row1, .row2, .row3, .row4, .row5, .row6 {
+    color: gray;
+}
+
+.correct {
+    color: #97aa82
+}
+
+.almost-correct {
+    color: #c3ad31;
+}
+
+/* Footer CSS */
+
+#win-lose {
+    color: white;
+    font-size: 30px;
+}
+
+#guess {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin: 20px;
+    color: white;
+    font-size: 25px;
+}
+
+#guess-input {
+    height: 25px;
+    width: 200px;
+    background-color: #97aa82;
+    border: 1px solid white;
+}
+
+::placeholder {
+    color: #5d7442
+}
+
+#submit, #submit1, #submit2, #submit3, #submit4, #submit5{
+    text-align: center;
+    padding-top: 2px;
+    margin: 20px;
+    height: 25px;
+    width: 100px;
+    background-color: #97aa82;
+    
+    color: white;
+}
+
+#submit:hover{
+    cursor: pointer;
+}
+
+#submit1:hover{
+    cursor: pointer;
+}
+
+#submit2:hover{
+    cursor: pointer;
+}
+
+#submit3:hover{
+    cursor: pointer;
+}
+
+#submit4:hover{
+    cursor: pointer;
+}
+
+#submit5:hover{
+    cursor: pointer;
+}
+
+#not-a-word {
+    text-align: center;
+}
+
+.nope {
+    display: none;
+}
+
+#qwertyuiop {
+    display: flex;
+    justify-content: center;
+}
+
+#asdfghjkl {
+    display: flex;
+    justify-content: center;
+}
+
+#zxcvbnm {
+    display: flex;
+    justify-content: center;
+}
+
+#keyboard {
+    height: 40px;
+    width: 20px;
+    background-color: #97aa82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    border-radius: 3px;
+    border: solid 1px white;
+    color: white;
+}
+
+.gray {
+    background-color: gray;
+}
+
